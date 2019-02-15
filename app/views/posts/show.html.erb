@@ -1,2 +1,10 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.description %></p>
+
+<%= form_tag edit_post_path(@post), method: "get" do %>
+  <%= submit_tag "Edit Post" %>
+<% end %>
+
+<%= form_tag posts_path, method: "get" do %>
+  <%= submit_tag "Go To Home" %>
+<% end %>

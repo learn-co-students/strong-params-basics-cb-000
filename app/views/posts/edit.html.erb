@@ -2,5 +2,12 @@
   <label>Post title:</label><br>
   <%= f.text_field :title %><br>
 
+  <label>Post Description</label><br>
+  <%= f.text_area :description %><br>
+
   <%= f.submit %>
+<% end %>
+
+<%= form_tag posts_path, method: "get" do %>
+  <%= submit_tag "Go To Home" %>
 <% end %>

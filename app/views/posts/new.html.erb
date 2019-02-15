@@ -7,3 +7,7 @@
 
   <%= f.submit %>
 <% end %>
+
+<%= form_tag posts_path, method: "get" do %>
+  <%= submit_tag "Go To Home" %>
+<% end %>
